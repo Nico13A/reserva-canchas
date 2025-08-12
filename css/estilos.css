@@ -248,8 +248,8 @@ footer {
     }
 
     #hero-banner {
-        height: 400px;
-        background-position: top;
+        height: 600px;
+        background-position: center;
     }
         #hero-banner div {
             width: 476px;
