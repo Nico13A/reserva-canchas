@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #AEC09A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1A2902;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 120px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    header img {
+        width: 80px;
+        border-radius: 50%;
+    }
+    header nav {
+        display: flex;
+    }
+    header nav a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    header nav a:hover, header nav a.active {
+        background-color: #344C11;
+    }
+
+main {
+    flex: 1;
+    margin-top: 120px;
+    padding: 40px 20px;
+}
+
+#main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+    #main-header h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+    #main-header p {
+        font-size: 16px;
+        color: #344C11;
+    }
+
+#search-section {
+    max-width: 1168px; 
+    margin: 0 auto 40px auto; 
+    padding: 0 20px;
+    text-align: center;
+}
+    #search-section form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #search-section form input {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #344C11;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        color: #1A2902;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #search-section form input::placeholder {
+        color: #AEC09A;
+    }
+    #search-section form input:focus {
+        outline: none;
+        border-color: #1A2902;
+        box-shadow: 0 0 5px rgba(52, 76, 17, 0.5);
+    }
+    #search-section button {
+        background-color: #1A2902;
+        color: #FFF;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #search-section button:hover {
+        background-color: #344C11;
+    }
+
+#available-grounds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1168px;
+    margin: auto;
+}
+    #available-grounds article {
+        background-color: #FFF;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(26, 41, 2, 0.2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    #available-grounds article img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    #available-grounds article div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #available-grounds article div h3 {
+        font-size: 20px;
+    }
+    #available-grounds article div p {
+        font-size: 14px;
+        color: #344C11;
+    }
+    #available-grounds article div a {
+        font-size: 16px;
+        text-decoration: none;
+        background-color: #1A2902;
+        padding: 10px 20px;
+        color: #FFF;
+        border-radius: 10px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+        width: fit-content;
+    }
+    #available-grounds article div a:hover {
+        background-color: #344C11;
+    }
+
+footer {
+    background-color: #1A2902;
+    color: #AEC09A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 240px;
+    padding: 40px;
+}
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer div:first-child {
+        width: 760px;
+        margin: auto;
+    }
+    footer div img {
+        width: 80px;
+        border-radius: 50%;
+    }
+    footer div div {
+        height: 24px;
+        width: auto;
+    }
+    footer div div a {
+        text-decoration: none;
+        color: #AEC09A;
+        padding: 0 10px;
+        transition: transform 0.3s ease;
+        font-size: 24px;
+    }
+    footer div div a:hover {
+        transform: scale(1.2);
+    }
+    footer p {
+        font-size: 16px;
+        text-align: center;
+    }

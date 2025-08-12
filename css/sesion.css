@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #AEC09A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1A2902;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 120px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    header img {
+        width: 80px;
+        border-radius: 50%;
+    }
+    header nav {
+        display: flex;
+    }
+    header nav a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    header nav a:hover, header nav a.active {
+        background-color: #344C11;
+    }
+
+main {
+    flex: 1;
+    margin-top: 120px;
+    background-image: url('../img/christian-widell-6zwP57Z4lTg-unsplash 2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 120px;
+}
+    main > div {
+        background-color: #FFFFFFE6;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+    }
+    main div form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    main div form h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        color: #1A2902;
+        font-size: 28px;
+    }
+    main div form .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #344C11;
+    }
+    main div form .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #AEC09A;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #F9F9F9;
+    }
+    main div form button {
+        width: 100%;
+        padding: 12px;
+        background-color: #1A2902;
+        color: #FFF;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    main div form button:hover {
+        background-color: #344C11;
+    }
+    main div form .forgot-password {
+        display: block;
+        text-align: right;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #344C11;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    main div form .forgot-password:hover {
+        text-decoration: underline;
+        color: #1A2902;
+    }
+    main div form hr {
+        border: 0;
+        height: 1px;
+        background-color: #AEC09A;
+        margin: 20px 0;
+    }
+    main div form .register-link {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #1A2902;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    main div form .register-link:hover {
+        color: #344C11;
+        text-decoration: underline;
+    }
+
+footer {
+    background-color: #1A2902;
+    color: #AEC09A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 240px;
+    padding: 40px;
+}
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer div:first-child {
+        width: 760px;
+        margin: auto;
+    }
+    footer div img {
+        width: 80px;
+        border-radius: 50%;
+    }
+    footer div div {
+        height: 24px;
+        width: auto;
+    }
+    footer div div a {
+        text-decoration: none;
+        color: #AEC09A;
+        padding: 0 10px;
+        transition: transform 0.3s ease;
+        font-size: 24px;
+    }
+    footer div div a:hover {
+        transform: scale(1.2);
+    }
+    footer p {
+        font-size: 16px;
+        text-align: center;
+    }

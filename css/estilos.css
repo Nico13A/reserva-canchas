@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #AEC09A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1A2902;
+    height: 60px;
+    padding: 10px 20px;
+}
+    header img {
+        width: 40px;
+        border-radius: 50%;
+    }
+    header nav {
+        display: none;
+    }
+
+main {
+    flex: 1;
+}
+
+#hero-banner {
+    color: #FFF;
+    height: 200px;
+    background-image: url('../img/christian-widell-6zwP57Z4lTg-unsplash\ 2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    #hero-banner div {
+        width: 262px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    /* Contenedor boton ver canchas */
+    #hero-banner #btn-view-courts {
+        align-items: flex-start;
+    }
+    #hero-banner div p {
+        font-size: 12px;
+    }
+    #hero-banner #btn-view-courts a {
+        background-color: #1A2902;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #FFF;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+    #hero-banner #btn-view-courts a:hover {
+        background-color: #344C11;
+    }
+
+#featured-courts {
+    color: #000;
+}
+    #featured-courts h2 {
+        font-size: 20px;
+        padding-left: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    #featured-courts div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+    #featured-courts article {
+        background-color: #FFF;
+        width: 95%;
+        max-width: 372px;
+        height: 372px;
+        border-radius: 10px;
+    }
+    #featured-courts article img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    #featured-courts article div {
+        height: 186px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #featured-courts article div h3 {
+        font-size: 16px;
+        word-break: break-word; 
+        overflow-wrap: break-word;  
+    }
+    #featured-courts article div p {
+        font-size: 14px;
+        word-break: break-word; 
+        overflow-wrap: break-word;  
+    }
+    #featured-courts article div a {
+        width: fit-content;
+        background-color: #1A2902;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #FFF;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+    #featured-courts article div a:hover {
+        background-color: #344C11;
+    }
+
+#how-it-works {
+    padding: 40px 20px;
+    color: #1A2902;
+}
+    #how-it-works h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #how-it-works div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #how-it-works div article {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 370px;
+        height: min-content;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    #how-it-works div article i {
+        border: 1px solid #1A2902;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 40px;
+    }
+    #how-it-works div article h3 {
+        font-size: 18px;
+    }
+    #how-it-works div article p {
+        font-size: 14px;
+    }
+
+footer {
+    background-color: #1A2902;
+    height: 140px;
+    color: #AEC09A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer div img {
+        width: 40px;
+        border-radius: 50%;
+    }
+    footer div div {
+        height: 24px;
+    }
+    footer div div a {
+        text-decoration: none;
+        color: #AEC09A;
+        padding: 0 10px;
+        transition: transform 0.3s ease;
+    }
+    footer div div a:hover {
+        transform: scale(1.2);
+    }
+    footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+@media (min-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 120px;
+        padding: 20px 20px 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        header img {
+            width: 80px;
+        }
+        header nav {
+            display: flex;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        header nav a:hover, header nav a.active {
+            background-color: #344C11;
+        }
+
+    main {
+        margin-top: 120px;
+    }
+
+    #hero-banner {
+        height: 400px;
+        background-position: top;
+    }
+        #hero-banner div {
+            width: 476px;
+            padding: 0 20px;
+        }
+        #hero-banner div h1 {
+            font-size: 42px;
+        } 
+        #hero-banner div p {
+            font-size: 20px;
+        } 
+        #hero-banner #btn-view-courts a {
+            font-size: 16px;
+            padding: 20px;
+        }
+    
+    #featured-courts {
+        width: 100%;
+        max-width: 1168px;
+        margin: auto;
+    }
+        #featured-courts h2 {
+            padding-left: 0;
+            font-size: 24px;
+        }
+        #featured-courts div {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: stretch;
+        }
+        #featured-courts article {
+            width: 100%; 
+            max-width: none;
+            height: auto; 
+        }
+        #featured-courts article div {
+            padding: 20px;
+            height: auto;
+            min-height: 188px;
+        }
+        #featured-courts article div h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #featured-courts article div p {
+            font-size: 16px;      
+        }
+        #featured-courts article div a {
+            font-size: 16px;
+        }
+    
+    #how-it-works {
+        width: 100%;
+        max-width: 1168px;
+        margin: auto;
+        padding: 60px 0;
+    }
+        #how-it-works h2 {
+            font-size: 24px;
+        }
+        #how-it-works div {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        #how-it-works div article i {
+            font-size: 80px;
+            padding: 20px;
+            text-align: center;
+            border: none;
+        }
+        #how-it-works div article h3 {
+            font-size: 20px;
+        }
+        #how-it-works div article p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+    footer {
+        min-height: 240px;
+        padding: 40px;
+    }
+        footer div:first-child {
+            width: 760px;
+            margin: auto;
+        }
+        footer div img {
+            width: 80px;
+        }
+        footer div div {
+            width: auto;
+        }
+        footer div div a {
+            font-size: 24px;
+        }
+        footer p {
+            font-size: 16px;
+        }
+
+}
